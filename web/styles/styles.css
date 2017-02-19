@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Sonder Sans Black";
+    src: url("../assets/SonderSans-Black.otf");
+}
+
+@page {
+    margin: 0;
+    size: a4;
+}
+
+@media print
+{
+    .print--hide {
+        display: none;
+    }
+}
+
+body {
+    -webkit-print-color-adjust: exact;
+}
+
+h1,
+h2 {
+    font-family: "Sonder Sans Black", serif;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 17pt;
+}
+
+h4 {
+    font-size: 12pt;
+}
+
+h6 {
+    font-size: 8pt;
+}
+
+.loading {
+    width: 38px;
+    height: 38px;
+    position: relative;
+}
+
+.loading-space {
+    margin: 16pt auto 0;
+}
+
+.f--green {
+    color: #77AB50;
+}
+
+.page {
+    width: 200mm;
+    height: calc(842pt - 1px);
+    padding: 23mm 0;
+    margin: 0 auto;
+    /*border-bottom: 1px solid red;*/
+}
+
+.page:first-of-type {
+    width: 100%;
+    height: auto;
+    padding: 0 0 24pt 0;
+}
+
+.page--cover {
+    text-align: center;
+}
+
+.page--cover h4 {
+    margin-bottom: 8pt;
+}
+
+.page--cover header {
+    margin-bottom: 16pt;
+}
+
+.page--board {
+    padding: 137pt 0;
+}
+
+.card {
+    width: 50mm;
+    height: 50mm;
+    border: 1px solid black;
+    position: relative;
+    float: left;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.card h2:first-child {
+    top: 8mm;
+}
+
+.card h2:last-child {
+    bottom: 8mm;
+    transform: rotate(180deg);
+}
+
+.a {
+    background-color: #D32042;
+}
+
+.b {
+    background: #2696C9;
+}
+
+.assassin {
+    background: #77AB50;
+}
+
+board {
+    width: 100mm;
+    height:100mm;
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    padding: 36px;
+}
+
+.page board:first-of-type {
+    border-bottom: none;
+}
+
+board * {
+    float: left;
+}
+
+board .team {
+    border: 1px solid black;
+}
+
+board .team.team--horizontal {
+    width: 50mm;
+    height: 5mm;
+    margin-left: 15mm;
+}
+
+board .team.team--vertical {
+    width: 5mm;
+    height: 50mm;
+    margin-top: 10mm;
+}
+
+board .table {
+    display: block;
+    width: 70mm;
+    height: 70mm;
+}
+
+board .cell {
+    width: 14mm;
+    height: 14mm;
+    border: 1px solid black;
+}
